@@ -1,0 +1,125 @@
+#root{
+  margin: 0;
+  top: 0;
+}
+body{
+  /* background-color:green; */
+  background-color:#191919;
+  color: #ffff;
+  margin: 0;
+}
+.navbar {
+  margin: 0;
+  overflow: hidden;
+  z-index:2;
+  background-color: #000;
+  position: fixed;
+  top: 0; 
+  width: 100%; 
+  height: 70px;
+  display: flex;
+  justify-content: space-between;
+  vertical-align: middle;
+}
+.navbar .HomeLink{
+  color: #fff;
+  text-decoration: none;
+  font-size: 30px;
+  margin: 20px 10px;
+}
+.navbar .AnalysisLink{
+  color: #fff;
+  text-decoration: none;
+  font-size: 20px;
+  margin: 25px 30px;
+}
+.main{
+  margin-top: 80px;
+  margin-left: 20px;
+}
+
+.box{
+  margin: 0 auto;
+  border-radius: 25px;
+  background-color: #2b2727;
+  border: 3px solid #f26522;
+}
+.available{
+  width: 35rem;
+  height: 10rem;
+}
+.innerAvail{
+  margin: 1rem 2rem;
+  text-align: center;
+}
+.innerAvail .num{
+  font-size: 60px;
+  font-weight: 800;
+}
+.skillBar{
+  height: 30px;
+  padding-top: 1rem;
+}
+.MainBar{
+  margin: 0 auto;
+  height: 15px;
+  width: 80%;
+  background-color: #4f4f4f;
+  border-radius: 10px;
+  box-shadow: 0 1px 1px rgba(0,0,0,0.12), 
+  0 2px 2px rgba(0,0,0,0.12), 
+  0 4px 4px rgba(0,0,0,0.12), 
+  0 8px 8px rgba(0,0,0,0.12),
+  0 16px 16px rgba(0,0,0,0.12);
+}
+.bar{
+  height: 15px;
+  border-radius: 10px;
+}
+
+.slots{
+  width: 80%;
+  padding: 2.5rem 2rem;
+  display: flex;    
+  flex-wrap: wrap;
+  justify-content: center;
+  
+}
+.slotCell{
+  margin: 10px;
+  width:150px;
+  height: 50px;
+  border: 2px solid #000;
+  border-radius: 10px;
+  text-align: center;
+  vertical-align: middle;
+}
+.slotCell p{
+  margin: 8px 0;
+  font-size: 30px;
+}
+@media only screen and (max-width: 900px) {
+  .box{
+    margin: 0;
+  }
+  .available{
+    width: 90%;
+  }
+  .main{
+    margin-left: 20px;
+  }
+}
+@media only screen and (max-width: 475px) {
+  .navbar .HomeLink{
+    font-size: 20px;
+  }
+  .slotCell{
+    margin: 5px;
+    width:120px;
+    height: 40px;
+  }
+  .slotCell p{
+    margin: 7.5px 0;
+    font-size: 25px;
+  }
+}

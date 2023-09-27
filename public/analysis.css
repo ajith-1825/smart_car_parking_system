@@ -1,0 +1,71 @@
+.mainA{
+    margin-top: 80px;
+}
+.Buttons{
+    padding: 3% 2%;
+    display: flex;
+    justify-content: space-evenly;
+}
+.brk-btn {
+    position: relative;
+    background: none;
+    text-transform: uppercase;
+    text-decoration: none;
+    padding: 0.5em 1.5em;
+    color: #f26522;
+    border: 0.2em solid #f26522;
+    font-size: large;
+}
+.brk-btn::before {
+      content: "";
+      display: block;
+      position: absolute;
+      width: 10%;
+      background: #222;
+      height: 0.3em;
+      right: 20%;
+      top: -0.21em;
+      transform: skewX(-45deg);
+      -webkit-transition: all 0.45s cubic-bezier(0.86, 0, 0.07, 1);
+      transition: all 0.45s cubic-bezier(0.86, 0, 0.07, 1);
+    }
+.brk-btn::after {
+      content: "";
+      display: block;
+      position: absolute;
+      width: 10%;
+      background: #222;
+      height: 0.3em;
+      left: 20%;
+      bottom: -0.25em;
+      transform: skewX(45deg);
+      -webkit-transition: all 0.45 cubic-bezier(0.86, 0, 0.07, 1);
+      transition: all 0.45s cubic-bezier(0.86, 0, 0.07, 1);
+    }
+.brk-btn:hover::before {
+        right: 80%;
+      }
+.brk-btn:hover::after {
+        left: 80%;
+      }
+.graph{
+    width: 90%;
+    margin: 0 auto;
+}
+@media only screen and (max-width: 900px) {
+    .Buttons{    
+  flex-wrap: wrap;
+  justify-content: safe;
+    }
+
+    .brk-btn {
+        padding: 0.25em 0.75em;
+        border: 0.1em solid #f26522;
+        font-size: large;
+        margin: 15px;
+    }
+    .graph{
+        width: 100%;
+        margin: 25px auto;
+    }
+}
